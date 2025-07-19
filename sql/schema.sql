@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS traffic;
+USE traffic;
+
+CREATE TABLE IF NOT EXISTS traffic_log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    intersection_id VARCHAR(10),
+    state VARCHAR(10),
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
